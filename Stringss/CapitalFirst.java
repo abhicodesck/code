@@ -12,7 +12,7 @@ public class CapitalFirst {
                 s1+=s.charAt(i);
             }
         }
-        return s1.trim();
+        return s1.replaceAll("\\s+","");
     }
     public static void main(String[] args) {
         System.out.println(Capitalize("  I have a bigger one"));
