@@ -1,0 +1,3 @@
+
+            arr[i] = sc.nextInt();
+        

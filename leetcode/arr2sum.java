@@ -1,0 +1,29 @@
+package leetcode;
+
+public class arr2sum {
+    class Solution {
+        public int[] twoSum(int[] nums, int target) {
+        
+        for(int i = 0; i < nums.length; i++) {
+            for(int j = i + 1; j < nums.length; j++) {
+                
+                if(nums[i] + nums[j] == target) {
+                    return new int[]{i, j};
+                }
+            }
+        }
+        
+        return new int[]{};
+    }
+    }
+
+    public static void main(String[] args) {
+        Solution obj = new Solution();
+        int[] nums = {3,5,6,7};
+        int target = 9;
+        int[] result = obj.twoSum(nums, target);
+        for(int result1 : result) {
+            System.out.print(result1);
+        }
+    }
+}
